@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/forall.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/image-steg.css">
+    <script src="scripts/steganography.min.js"></script>
+    <title>I</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-div">
+                <div class="logo-img">
+                    <a href="index.html"><img src="public/CyberSec.png" alt="cybersec" class="cybersec-png"></a>
+                </div>
+                <div class="ul-div">
+                    <ul class="navbar-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="extra.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="share-div">
+                    <img src="public/share.png" alt="share" class="share-png" onclick="">
+                </div>
+                <div>
+                    <button class="btn-div"><a href="#" class="signin-btn">Sign In</a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="first-rectangle"></div>
+
+    <div class="compress-area">
+        <div class="container">
+            <div style="min-height: 472px; display: block;">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="uploader-container">
+                            <div class="row-inner">
+                                <div class="col12 image-container" id="afterText1" style="display:none;">
+                                    <p class="source-img">Source Image : </p>
+                                    <img id="image1" src="" alt="" />
+                                </div>
+                                <div class="col12 image-container" id="afterText2" style="display:none;">
+                                    <p class="source-img">Message Encoded Image : </p>
+                                    <img id="image2" src="" alt="" />
+                                </div>
+                            </div>
+                            <div class="uploader-inner" id="none" style="display : block">
+                                <div class="file-upload-div">
+                                    <input style="display: none;" id="fileInput" type="file" name="pic" accept="image/*"
+                                        onchange="readURL(this);" />
+                                    <button title="Upload from PC"
+                                        onclick="document.getElementById('fileInput').click()">Upload from PC</button>
+                                </div>
+                                <p class="drag-text">
+                                    or Drag files here
+                                </p>
+                            </div>
+                        </div>
+                        <div class="input-msg">
+                            <label for="msg">
+                                <p id="bold">The Message</p>
+                            </label>
+                            <textarea placeholder="Enter Secret Message" rows="5" cols="100" maxlength="100"
+                                id="inputMsg" class="form-control" ></textarea>
+                        </div>
+                        <div class="hide-btn">
+                            <button title="Hide Message Into Image" onclick="hideText()">Hide Message Into Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/image-steg.js"></script>
+
+</html>
