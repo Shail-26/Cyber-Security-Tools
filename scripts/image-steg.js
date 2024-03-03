@@ -22,7 +22,7 @@ function decode(input) {
         reader.onload = function (e) {
             console.log(steg.decode(e.target.result));
 
-            document.querySelector('#decoded').innerText = steg.decode(e.target.result);
+            document.querySelector('#outputBox').innerText = steg.decode(e.target.result);
         };
     }
     reader.readAsDataURL(input.files[0]);

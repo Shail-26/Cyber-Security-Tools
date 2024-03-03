@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/image-steg.css">
     <script src="scripts/steganography.min.js"></script>
-    <title>I</title>
+    <title>CyberSec Toolbox</title>
 </head>
 
 <body>
@@ -40,6 +40,10 @@
         <div class="container">
             <div style="min-height: 472px; display: block;">
                 <div class="row justify-content-center">
+                    <div class="center-text">
+                        <h1 class="tool_title">Image Steganography</h1>
+                        <p class="desc_tool">Secrets in Plain Sight: Safeguarding Images with Steganography</p>
+                    </div>
                     <div class="col">
                         <div class="uploader-container">
                             <div class="row-inner">
@@ -73,6 +77,18 @@
                         </div>
                         <div class="hide-btn">
                             <button title="Hide Message Into Image" onclick="hideText()">Hide Message Into Image</button>
+                        </div>
+                        <hr />
+                        <div class="file-upload-div decode-btn">
+                            <input style="display: none;" id="fileInputDecode" type="file" name="pic" accept="image/*" onchange="decode(this);" />
+                            <button title="Upload from PC"
+                                onclick="document.getElementById('fileInputDecode').click()">Upload from PC</button>
+                        </div>
+                        <div class="decoded-text">
+                            <label for="title" class="decoded-text-title">Decoded Text :</label>
+                            <div class="form-group">
+                                <textarea placeholder="Result goes here" rows="5" cols="100" id="outputBox" class="form-control" style="margin-bottom: 40px;" readonly></textarea>
+                            </div>
                         </div>
                     </div>
                 </div>
