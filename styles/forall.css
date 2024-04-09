@@ -4,9 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1a252e;
     font-family: 'Poppins', sans-serif;
     color : #fff;
+}
+
+body{
+    background-color: #1a252e;
 }
 
 .first-rectangle {

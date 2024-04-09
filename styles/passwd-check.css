@@ -1,0 +1,97 @@
+
+  .center-text {
+    text-align : center !important;
+  }
+
+  .tool_title{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .desc_tool {
+    font-size : 18px;
+    margin-top : 15px;
+  }
+  
+  .outer-container{
+    display : flex;
+    min-height : 22.25em;
+    min-width : 1200px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-outer{
+    padding : 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #223544;
+  }
+
+  .password-container {
+    position : relative;
+    min-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .password-container .show {
+    position : absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-130%);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: none;
+  }
+  
+  .strength-meter {
+    margin-top: 10px;
+  }
+  
+  .meter {
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .meter-fill-grey {
+    height: 100%;
+    background-color: #ccc;
+  }
+  .weak {
+    height: 100%;
+    background-color: #fd4949;
+  }
+  .moderate {
+    height: 100%;
+    background-color: #fffa5d;
+  }
+  .strong {
+    height: 100%;
+    background-color: rgb(113, 229, 113);
+  }
+  
+  .strength-text {
+    margin-bottom: 5px;
+  }
+  
+  .time-to-crack {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
