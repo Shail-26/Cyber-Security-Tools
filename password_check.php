@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
+    header("location: signin.php");
+    exit;
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +25,7 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <div class="nav-container">
             <div class="nav-div">
                 <div class="logo-img">
@@ -36,7 +47,8 @@
             </div>
         </div>
     </nav>
-    <div class="first-rectangle"></div>
+    <div class="first-rectangle"></div> -->
+    <?php require 'navbar.php'?>
     <div class="center-text">
         <h1 class="tool_title">Password Strength Tester</h1>
         <p class="desc_tool">Strengthen Your Security: Test Your Password Strength Today!</p>
@@ -52,7 +64,7 @@
                     <div class="meter">
                         <div class="meter-fill-grey" id="strengthMeter" style="background-color:none"></div>
                     </div>
-                    <div class="time-to-crack" id="timeToCrack">Time to crack: </div>
+                    <div class="time-to-crack" id="timeToCrack">Approx. Time to crack: </div>
                 </div>
             </div>
         </div>

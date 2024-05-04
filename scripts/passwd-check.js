@@ -29,7 +29,7 @@ function checkPasswordStrength() {
 
     // Calculate time to crack
     let crackTime = calculateTimeToCrack(password, strength);
-    timeToCrack.textContent = "Time to crack: " + crackTime;
+    timeToCrack.textContent = "Approx. Time to crack: " + crackTime;
 }
 
 function calculateStrength(password) {

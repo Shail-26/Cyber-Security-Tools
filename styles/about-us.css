@@ -1,0 +1,90 @@
+.aboutus-container {
+    max-width: 800px;
+    margin: 12px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 2px 3px 6px #1a8fe3;
+}
+
+.aboutus-container h2 {
+    color: #1a8fe3;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.aboutus-container p {
+    color: #555555;
+    line-height: 1.6;
+    background-color: #ffffff;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.aboutus-container .first-paragraph {
+    text-indent: 20%;
+}
+.contact-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    }
+
+.profile-card {
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    min-width: 280px;
+}
+
+.profile-card img {
+    width: 150px;
+    padding: 2px;
+    height: 150px;
+    border-radius: 6%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    position: relative;
+}
+
+.profile-details {
+    text-align: center;
+    color: #fcf3f3;
+}
+
+.profile-details h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.profile-card .media-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.media-buttons .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+}

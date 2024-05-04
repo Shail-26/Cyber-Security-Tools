@@ -1,0 +1,32 @@
+let signUpBtn=document.querySelector(".signUpBtn");
+var signInBtn=document.querySelector(".signInBtn");
+let nameField=document.querySelector(".namefield");
+let btnSignUpField=document.querySelector(".up");
+let btnSignInField=document.querySelector(".in");
+let cpasswordField = document.querySelector(".cpassword");
+let title=document.querySelector(".title");
+let underline=document.querySelector(".underline");
+let nameReq=document.querySelector("#namereq");
+let cpassReq=document.querySelector("#cpassreq");
+signInBtn.addEventListener('click',()=>{
+    nameField.style.maxHeight='0';
+    nameReq.removeAttribute('required');
+    cpasswordField.style.maxHeight='0';
+    cpassReq.removeAttribute('required');
+    title.innerHTML='Sign In';
+    signUpBtn.classList.add('disable');
+    signInBtn.classList.remove('disable');
+    btnSignInField.classList.remove('hide');
+    btnSignUpField.classList.add('hide');
+    underline.style.transform='translateX(35px)';
+});
+signUpBtn.addEventListener('click',()=>{
+    nameField.style.maxHeight='60px';
+    cpasswordField.style.maxHeight='60px';
+    title.innerHTML='Sign Up';
+    signUpBtn.classList.remove('disable');
+    btnSignUpField.classList.remove('hide');
+    btnSignInField.classList.add('hide');
+    signInBtn.classList.add('disable');
+    underline.style.transform='translateX(0)';
+});

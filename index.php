@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +11,12 @@
     <link rel="stylesheet" href="styles/forall.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/home.css">
+    <script src="https://kit.fontawesome.com/72f3493b1d.js" crossorigin="anonymous"></script>
     <title>CyberSec Toolbox</title>
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <div class="nav-container">
             <div class="nav-div">
                 <div class="logo-img">
@@ -32,12 +38,14 @@
             </div>
         </div>
     </nav>
-    <div class="first-rectangle"></div>
+    <div class="first-rectangle"></div> -->
+    
+    <?php require 'navbar.php'?>
     <div class="container-tools">
         <div class="row-tools">
             <div class="js-tools-slider">
                 <div class="tools_item violet">
-                    <a href="image-enc.html">
+                    <a href="image-enc.php">
                     <div class="tool-images">
                         <img src="public/image-encryption.jpeg" alt="tool-image" class="tool-image">
                         <hr />
@@ -48,7 +56,7 @@
                     </a>
                 </div>
                 <div class="tools_item orange">
-                    <a href="des.html">
+                    <a href="des.php">
                         <div class="tool-images">
                             <img src="public/image-encryption.jpeg" alt="tool-image" class="tool-image">
                             <hr />
@@ -59,7 +67,7 @@
                     </a>
                 </div>
                 <div class="tools_item red">
-                    <a href="password_check.html">
+                    <a href="password_check.php">
                         <div class="tool-images">
                             <img src="public/image-encryption.jpeg" alt="tool-image" class="tool-image">
                             <hr />
@@ -76,7 +84,7 @@
         <div class="row-tools">
             <div class="js-tools-slider">
                 <div class="tools_item blue">
-                    <a href="image-steg.html">
+                    <a href="image-steg.php">
                     <div class="tool-images">
                         <img src="public/image-steganography.png" alt="tool-image" class="tool-image">
                         <hr />
