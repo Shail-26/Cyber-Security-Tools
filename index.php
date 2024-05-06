@@ -47,7 +47,7 @@ session_start();
                 <div class="tools_item violet">
                     <a href="image-enc.php">
                     <div class="tool-images">
-                        <img src="public/image-encryption.jpeg" alt="tool-image" class="tool-image">
+                        <img src="public/image-enc.png" alt="tool-image" class="tool-image">
                         <hr />
                     </div>
                     <div class="tool-footer footer-text">

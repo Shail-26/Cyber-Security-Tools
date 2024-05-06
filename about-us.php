@@ -16,28 +16,28 @@ session_start();
 
 <body>
     <!-- <nav>
-    <div class="nav-container">
-        <div class="nav-div">
-            <div class="logo-img">
-                <a href="index.html"><img src="public/CyberSec.png" alt="cybersec" class="cybersec-png"></a>
-            </div>
-            <div class="ul-div">
-                <ul class="navbar-list">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="extra.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-                </ul>
-            </div>
-            <div class="share-div">
-                <img src="public/share.png" alt="share" class="share-png" onclick="">
-            </div>
-            <div>
-                <button class="btn-div"><a href="#" class="signin-btn">Sign In</a></button>
+        <div class="nav-container">
+            <div class="nav-div">
+                <div class="logo-img">
+                    <a href="index.html"><img src="public/CyberSec.png" alt="cybersec" class="cybersec-png"></a>
+                </div>
+                <div class="ul-div">
+                    <ul class="navbar-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="extra.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="share-div">
+                    <img src="public/share.png" alt="share" class="share-png" onclick="">
+                </div>
+                <div>
+                    <button class="btn-div"><a href="#" class="signin-btn">Sign In</a></button>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
-<div class="first-rectangle"></div> -->
+        </nav>
+    <div class="first-rectangle"></div> -->
     <?php require 'navbar.php'?>
     <div class="aboutus-container">
         <h2>About Us</h2>

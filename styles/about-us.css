@@ -19,9 +19,11 @@
     color: #555555;
     line-height: 1.6;
     background-color: #ffffff;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     padding-left: 10px;
     margin-bottom: 15px;
+    margin-right: 5px;
 }
 .aboutus-container .first-paragraph {
     text-indent: 20%;
