@@ -90,10 +90,11 @@ nav{
     margin-right : 60px;
     width : 151px;
     height : 52px;
+    cursor: pointer;
 }
 
 
-.btn-div .signin-btn {
+.signin-btn {
     text-decoration: none;
     color : whitesmoke;
     font-weight: 600;
@@ -108,4 +109,8 @@ nav{
     background-color: #1a8fe3;
     padding : 10px;
     border-radius : 10px;
+}
+
+.btn-h1 {
+    font-weight: 600;
 }

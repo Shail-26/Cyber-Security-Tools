@@ -47,15 +47,19 @@ echo '<nav>
             <div id="overlay"></div>';
             if(!$loggedin){
             echo '
-            <div class="sign-in">
-                <button class="btn-div"><a href="signin.php" class="signin-btn">Sign In</a></button>
-            </div>';
+            <a href="signin.php" class="signin-btn">
+                <div class="sign-in">
+                    <button class="btn-div"><h1 class="btn-h1">Sign Up</h1></button>
+                </div>
+            </a>';
             }
             if($loggedin){
             echo '
-            <div class="icon">
-                <h1 style="margin-right: 30px;"><a href="logout.php" style="text-decoration: none"><img src="public/user.png" alt="user" class="user-img"></a></h1>
-            </div>';
+            <a href="logout.php" style="text-decoration: none">
+                <div class="icon">
+                    <h1 style="margin-right: 30px;"><img src="public/user.png" alt="user" class="user-img"></h1>
+                </div>
+            </a>';
             }
             echo '
         </div>

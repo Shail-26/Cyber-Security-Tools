@@ -51,7 +51,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
         <div class="content">
         <?php 
             if(!$loggedin){
-                echo '<h1>To access the website, Please <span onclick="location.href=`signin.php`" style="cursor: pointer">Sign In</span></h1>';
+                echo '<h1>To access the website, Please <span onclick="location.href=`signin.php`" style="cursor: pointer">Sign Up</span></h1>';
             }
             else {
                 echo '<h1>Hello, Welcome to our Website <span>'.$_SESSION['name'].'</span>!</h1>';   //
