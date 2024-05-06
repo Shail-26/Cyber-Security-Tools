@@ -11,7 +11,7 @@ session_start();
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/about-us.css">
     <title>About Us</title>
-
+    <link rel="icon" href="public/CS-removebg.png" type="image/x-icon" />
 </head>
 
 <body>

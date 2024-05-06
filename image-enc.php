@@ -21,6 +21,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="scripts/image-encryption.js"></script>
     <title>Image Encryption</title>
+    <link rel="icon" href="public/CS-removebg.png" type="image/x-icon" />
+
 </head>
 
 <body>

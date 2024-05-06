@@ -19,6 +19,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
     <link rel="stylesheet" href="styles/image-steg.css">
     <script src="scripts/steganography.min.js"></script>
     <title>CyberSec Toolbox</title>
+    <link rel="icon" href="public/CS-removebg.png" type="image/x-icon" />
+
 </head>
 
 <body>

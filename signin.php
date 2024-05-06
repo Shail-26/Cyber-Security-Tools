@@ -75,6 +75,7 @@ if(isset($_POST['login'])){
     <link rel="stylesheet" href="styles/forall.css">
     <link rel="stylesheet" href="styles/signin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="public/CS-removebg.png" type="image/x-icon" />
 
 </head>
 

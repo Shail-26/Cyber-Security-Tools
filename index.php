@@ -13,6 +13,8 @@ session_start();
     <link rel="stylesheet" href="styles/home.css">
     <script src="https://kit.fontawesome.com/72f3493b1d.js" crossorigin="anonymous"></script>
     <title>CyberSec Toolbox</title>
+    <link rel="icon" href="public/CS-removebg.png" type="image/x-icon" />
+
 </head>
 
 <body>
