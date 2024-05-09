@@ -33,8 +33,13 @@ function decryptImage() {
     const reader = new FileReader();
     reader.onload = function(event) {
         const encryptedImageData = event.target.result.split(',')[1]; // Get base64 image data
-        
-        const decrypted = CryptoJS.AES.decrypt(encryptedImageData, decryptionKey).toString(CryptoJS.enc.Utf8);
+        let decrypted;
+        try{
+        decrypted = CryptoJS.AES.decrypt(encryptedImageData, decryptionKey).toString(CryptoJS.enc.Utf8);
+        } catch (error) {
+            alert('Decryption failed: Wrong Decryption Key');
+            return;
+        }
         
         const decryptedImage = document.getElementById('decryptedImage');
         const decryptedImageDisplay = document.getElementById('decryptedImageDisplay');

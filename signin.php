@@ -22,8 +22,8 @@ if(isset($_POST['signup'])){
             $result = mysqli_query($conn, $sql);
     
             if($result) {
-                $showAlert = true;
-                header("Location: signin.php");
+                $showAlert = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>User Created<h1>";
+                // header("Location: signin.php");
             }
         } else{
             $showError = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Passwords do not match</h1>";
@@ -82,7 +82,7 @@ if(isset($_POST['login'])){
 <body>
     <?php
         if($showAlert) {
-            echo "<h1 style='color:white; display:flex; justify-content:center;'>User Created<h1>";
+            echo $showAlert;
         }
         if($showError) {
             echo $showError;

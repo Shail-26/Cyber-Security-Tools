@@ -94,11 +94,11 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !=true){
                         <hr />
                         <div class="file-upload-div decode-btn">
                             <input style="display: none;" id="fileInputDecode" type="file" name="pic" accept="image/*" onchange="decode(this);" />
-                            <button title="Upload from PC"
+                            <button title="Upload from PC" style="margin-bottom: 20px;"
                                 onclick="document.getElementById('fileInputDecode').click()">Upload from PC</button>
                         </div>
                         <div class="decoded-text">
-                            <label for="title" class="decoded-text-title">Decoded Text :</label>
+                            <label for="title" class="decoded-text-title" style="font-weight: 600; font-size: 18px; margin-bottom : 20px;">Decoded Text :</label>
                             <div class="form-group">
                                 <textarea placeholder="Result goes here" rows="5" cols="100" id="outputBox" class="form-control" style="margin-bottom: 40px;" readonly></textarea>
                             </div>

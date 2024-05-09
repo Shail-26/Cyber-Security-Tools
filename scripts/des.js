@@ -56,7 +56,7 @@ function performOperationEncryption() {
     console.log("Ciphertext: ", ciphertext);
 
     const outputBoxEncrypted = ciphertext;
-
+    
     // Display the result in the output box
     document.getElementById("outputBoxEncrypted").textContent = outputBoxEncrypted;
 }
@@ -84,7 +84,9 @@ function performOperationDecryption() {
     console.log("Decrypted: ", decrypted);
 
     const outputBoxDecrypted = decrypted;
-
+    if(decrypted == ""){
+        alert("Wrong Secret Key");
+    }
     // Display the result in the output box
     document.getElementById("outputBoxDecrypted").textContent = outputBoxDecrypted;
 }
