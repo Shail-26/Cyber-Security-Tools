@@ -13,7 +13,8 @@ if(isset($_POST['signup'])){
     $numExistRows = mysqli_num_rows($result);
     if($numExistRows > 0){
         // $exists = true;
-        $showError = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Email already exists.</h1>";
+        // $showError = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Email already exists.</h1>";
+        echo "<script>alert('Email already exists.')</script>";
     } else {
         if(($password == $cpassword)){
             $hash = password_hash($password, PASSWORD_BCRYPT);
@@ -22,11 +23,13 @@ if(isset($_POST['signup'])){
             $result = mysqli_query($conn, $sql);
     
             if($result) {
-                $showAlert = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>User Created<h1>";
+                // $showAlert = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>User Created<h1>";
+                echo "<script>alert('User Created')</script>";
                 // header("Location: signin.php");
             }
         } else{
-            $showError = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Passwords do not match</h1>";
+            // $showError = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Passwords do not match</h1>";
+            echo "<script>alert('Passwords do not match')</script>";
         }
     }
 }
@@ -54,11 +57,13 @@ if(isset($_POST['login'])){
                 $_SESSION['name'] = $row['name'];
                 header("location: cover.php");
             } else {
-                $showErrorL = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Invalid Credentials.</h1>";
+                // $showErrorL = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Invalid Credentials.</h1>";
+                echo "<script>alert('Invalid Credentials')</script>";
             }
         }
     } else {
-        $showErrorL = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Invalid Credentials.</h1>";
+        // $showErrorL = "<h1 style='color:white; display:flex; justify-content:center; position:absolute;'>Invalid Credentials.</h1>";
+        echo "<script>alert('Invalid Credentials')</script>";
     }
 }
 

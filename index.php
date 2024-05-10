@@ -60,7 +60,7 @@ session_start();
                 <div class="tools_item orange">
                     <a href="des.php">
                         <div class="tool-images">
-                            <img src="public/image-encryption.jpeg" alt="tool-image" class="tool-image">
+                            <img src="public/pngtree-icon-depicting-the-gradient-vector-of-an-encryption-key-for-a-darkthemed-interface-vector-png-image_43631982.jpg" alt="tool-image" class="tool-image">
                             <hr />
                         </div>
                         <div class="tool-footer footer-text">
